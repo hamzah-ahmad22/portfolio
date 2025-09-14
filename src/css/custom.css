@@ -1,0 +1,443 @@
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+.theme-admonition.theme-admonition-note {
+  background: transparent;
+  border-left: 2px solid var(--ifm-color-primary);
+  padding: 0.5rem 0.75rem;
+  margin: 0.75rem 0 0.75rem 1.25rem;
+  font-size: 0.9rem;
+}
+
+.theme-admonition.theme-admonition-note .admonition-title {
+  display: none;
+}
+
+.theme-admonition.theme-admonition-note p {
+  margin: 0.25rem 0;
+}
+
+
+.admonition .admonition-heading h5,
+.admonition .admonition-title,
+.theme-admonition .theme-admonition__heading,
+.alert .alert__heading,
+[class*="admonitionHeading"] {
+  text-transform: none !important;
+  letter-spacing: normal !important;
+}
+
+.footer {
+  padding-top: 0.6rem;
+  padding-bottom: 0.6rem;
+}
+
+.footer__links {
+  margin-bottom: 0.5rem;
+}
+
+.footer__title {
+  margin-bottom: 0.25rem;
+  font-size: 0.9rem;
+}
+
+.footer__items {
+  margin: 0;
+}
+
+.footer__item {
+  margin: 0.125rem 0;
+}
+
+.footer__link-item {
+  line-height: 1.25;
+}
+
+.footer__bottom {
+  padding-top: 0.2rem;
+}
+
+
+@media (max-width: 996px) {
+  .footer {
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+  }
+  .footer__title { font-size: 0.85rem; }
+}
+
+.footer__links {
+  justify-content: center;
+}
+
+
+.footer__col {
+  text-align: center;
+}
+
+
+.footer__logo {
+  margin: 0 auto;
+}
+
+
+.footer__bottom {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+
+
+.tip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted currentColor; /* optional underline */
+}
+
+.tip__bubble {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + .5rem);
+  transform: translateX(-50%) translateY(4px);
+  background: var(--ifm-color-emphasis-900, #000);
+  color: var(--ifm-color-content-inverse, #fff);
+  padding: .35rem .5rem;
+  border-radius: .375rem;
+  white-space: nowrap;
+  font-size: .875rem;
+  line-height: 1.2;
+  box-shadow: 0 2px 8px rgba(0,0,0,.18);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;  /* prevents flicker */
+  transition: opacity .12s ease, transform .12s ease, visibility 0s linear .12s;
+  z-index: 10;
+}
+
+/* Inline tooltip wrapper */
+.tip {
+  position: relative;
+  display: inline-block;      /* keeps it on the same line as text */
+  border-bottom: 1px dotted currentColor; /* optional underline */
+  cursor: pointer;            /* clickable (no ? cursor) */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Visually hidden but accessible checkbox (holds the toggle state) */
+.tip__toggle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  opacity: 0;                 /* keep in the a11y tree */
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Tooltip bubble */
+.tip__bubble {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + .5rem);
+  transform: translateX(-50%) translateY(4px);
+  background: var(--ifm-color-emphasis-900, #000);
+  color: var(--ifm-color-content-inverse, #fff);
+  padding: .35rem .5rem;
+  border-radius: .375rem;
+  white-space: nowrap;
+  font-size: .875rem;
+  line-height: 1.2;
+  box-shadow: 0 2px 8px rgba(0,0,0,.18);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;        /* prevents flicker */
+  transition: opacity .12s ease, transform .12s ease, visibility 0s linear .12s;
+  z-index: 10;
+}
+
+/* Inline tooltip wrapper */
+.tip {
+  position: relative;
+  display: inline-block;              /* stay on same line with text */
+  border-bottom: 1px dotted currentColor; /* optional underline */
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Hidden checkbox that holds toggle state (accessible) */
+.tip__toggle {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  opacity: 0;                         /* keep in a11y tree */
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Tooltip bubble — made roomier for a 10x10 heart */
+.tip__bubble {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + .5rem);
+  transform: translateX(-50%) translateY(4px);
+  display: inline-flex;               /* centers single heart nicely */
+  align-items: center;
+  justify-content: center;
+  background: var(--ifm-color-emphasis-900, #000);
+  color: var(--ifm-color-content-inverse, #fff);
+  padding: .45rem .6rem;              /* slightly larger than before */
+  border-radius: .5rem;
+  white-space: nowrap;
+  font-size: .9rem;
+  line-height: 1.25;
+  min-width: 1.5rem;                  /* ensure room for heart */
+  min-height: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,.18);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;               /* prevents flicker */
+  transition: opacity .12s ease, transform .12s ease, visibility 0s linear .12s;
+  z-index: 20;
+}
+
+/* Arrow (optional) */
+/*
+.tip__bubble::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: var(--ifm-color-emphasis-900, #000) transparent transparent transparent;
+}
+*/
+
+/* Show bubble on hover or keyboard focus */
+.tip:hover .tip__bubble,
+.tip:focus-within .tip__bubble {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+  transition-delay: 0s;
+}
+
+/* Keep this specific image inline (override Docusaurus’ block images) */
+.theme-doc-markdown .tip__img,
+.markdown .tip__img {
+  display: inline-block !important;
+  margin: 0 .25rem;
+  vertical-align: middle;
+  max-width: none;
+}
+
+/* Swap text ↔ heart when toggled */
+.tip__bubble .tip__text { display: inline; }
+.tip__bubble .tip__heart {
+  display: none;
+  width: 25px;              /* exact size you wanted */
+  height: auto;
+  vertical-align: -0.15em;
+}
+
+.tip__bubble  {
+width: 90px;
+height: auto;
+}
+
+.tip__toggle:checked ~ .tip__bubble .tip__text { display: none; }
+.tip__toggle:checked ~ .tip__bubble .tip__heart { display: inline-block; }
+
+/* Focus styles:
+   - No outline on mouse click
+   - Show a ring only for keyboard navigation */
+.tip:focus,
+.tip:focus-within { outline: none; }
+.tip:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .tip__bubble { transition: none; }
+}
+
+
+/* Inline tooltip — cleaner, roomier, a11y-friendly */
+:root {
+  --tip-bg: var(--ifm-color-emphasis-900);
+  --tip-fg: var(--ifm-color-content-inverse);
+}
+
+[data-theme='dark'] {
+  --tip-bg: var(--ifm-color-emphasis-900);
+  --tip-fg: var(--ifm-color-content-inverse);
+}
+
+/* Wrapper */
+.tip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  border-bottom: 1px dotted currentColor; /* remove with .tip--no-underline */
+}
+
+/* Optional: remove underline when used with images/icons */
+.tip--no-underline { border-bottom: 0; }
+
+/* Image inside tip (no focus ring on click) */
+.tip__img {
+  display: inline-block !important;
+  margin: 0 .25rem;
+  vertical-align: middle;
+  max-width: none;
+  outline: none;
+}
+.tip__img:focus,
+.tip__img:active { outline: none; }
+
+/* Hidden checkbox holds toggle state (still accessible) */
+.tip__toggle {
+  position: absolute;
+  width: 1px; height: 1px;
+  margin: 0; padding: 0; border: 0;
+  opacity: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+/* Bubble */
+.tip__bubble {
+  position: absolute;
+  left: 50%;
+  bottom: calc(100% + 8px);
+  transform: translateX(-50%) translateY(4px) scale(.98);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: .25rem;
+
+  min-width: 20px;                /* fits 10×10 heart */
+  min-height: 20px;
+  max-width: 260px;               /* allow multi-line */
+  padding: 6px 8px;
+
+  background: var(--tip-bg);
+  color: var(--tip-fg);
+  border-radius: 8px;
+  text-align: center;
+  white-space: normal;            /* allow wrapping */
+  line-height: 1.25;
+
+  box-shadow: 0 6px 18px rgba(0,0,0,.18);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 40;
+
+  transition:
+    opacity .14s ease,
+    transform .14s ease,
+    visibility 0s linear .14s;
+}
+
+/* Arrow */
+.tip__bubble::after {
+  content: "";
+  position: absolute;
+  top: 100%; left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: var(--tip-bg) transparent transparent transparent;
+}
+
+/* Show bubble on hover, keyboard focus, or toggle */
+.tip:hover .tip__bubble,
+.tip:focus-within .tip__bubble,
+.tip__toggle:checked ~ .tip__bubble {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0) scale(1);
+  transition-delay: 0s;
+}
+
+/* Swap text ↔ heart when toggled */
+.tip__text { display: inline; }
+.tip__heart {
+  display: none;
+  width: 10px;                    /* 10×10 per your spec */
+  height: 10px;
+  vertical-align: -0.15em;
+}
+.tip__toggle:checked ~ .tip__bubble .tip__text { display: none; }
+.tip__toggle:checked ~ .tip__bubble .tip__heart { display: inline-block; }
+
+/* Focus styles: only show for keyboard users */
+.tip:focus,
+.tip:focus-within { outline: none; }
+.tip:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+  border-radius: 6px;
+}
+
+/* Tighter shadow in dark mode */
+[data-theme='dark'] .tip__bubble {
+  box-shadow: 0 8px 24px rgba(0,0,0,.4);
+}
+
+/* Avoid clipping on very narrow screens: anchor to left */
+@media (max-width: 480px) {
+  .tip__bubble {
+    left: 0;
+    right: auto;
+    transform: translateY(4px);
+  }
+  .tip:hover .tip__bubble,
+  .tip:focus-within .tip__bubble,
+  .tip__toggle:checked ~ .tip__bubble {
+    transform: translateY(0);
+  }
+}
+
+/* Respect reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  .tip__bubble { transition: none; }
+}
+
