@@ -5,7 +5,7 @@ sidebar_label: Approve human-caption requests
 sidebar_position: 3
 ---
 
-Approvals are required only for roles or users configured with **Require approval**. To change who needs approval, see [Assign human-caption permissions](/docs/assign-human-caption-permissions).
+Approvals are required only for roles or users configured with **Require approval**. To change who needs approval, see [Assign human-caption permissions](docs\product-guide\admin-setup\permissions\assign-human-captioning-permissions.md).
 
 :::info Prerequisites
 
