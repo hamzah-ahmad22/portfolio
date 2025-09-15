@@ -27,6 +27,13 @@ Mississauga, ON • Feb. 2022 – Apr. 2022
 - Worked alongside writers to develop structured and readable writing for the targeted audience.
 - Verified references in the source list to ensure correct information and citations.
 
+**Dweebs Global** — _Policy Researcher and Writer_
+
+Mississauga, ON • Sep. 2021 – Mar. 2022
+
+- Translated child-labor legislation and amendments into plain language for a general audience.
+- Edited and fact-checked conclusions in child labor studies, ensuring methodological accuracy.
+
 ## Education
 
 **University of Toronto** — _Bachelor of Arts | Criminology_
