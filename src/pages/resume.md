@@ -12,12 +12,12 @@ title: Resume
 
 North York, ON • May 2022 – Present
 
-- Own end-to-end documentation for YuJa’s product suite; maintain and continuously improve 900+ customer-facing and internal guides in Zendesk and Confluence.
-- Establish content governance (templates, style rules, review workflows) to improve consistency, reduce duplication, and speed up updates across teams.
-- Translate new and complex features into clear user guides and UI microcopy by partnering closely with Engineering and Product; ensure accuracy pre- and post-release.
-- Collaborate with UX Design to standardize voice, terminology, and accessibility practices across multiple product teams.
-- Improve support-site usability with targeted HTML/CSS updates and SEO basics to help users find answers faster.
-- Develop RFP content that clearly explains product capabilities and workflows, contributing to Sales securing live demos with prospective clients.
+- Manage customer-facing and internal documentation for a multi-product SaaS suite, managing 1,000+ guides in Zendesk and Confluence for customers and new hires.
+- Maintain a 48-hour publishing SLA from code freeze to go-live for product guides across accessibility, proctoring, and streaming software.
+- Built a scalable documentation operating model in Zendesk, including a style guide, templates, and review process, standardizing quality across products.
+- Author client-specific, compliant RFPs, partnering with Product, Legal, and Sales to secure live demos.
+- Partner with Product, Engineering, and UX teams to improve usability and standardize UI text, labels, and error states across products.
+- Maintain a Zendesk theme (HTML/CSS) with reusable components, enabling faster page builds and consistent UX.
 
 **UTM Sociology & Criminology Society** — _Journal Editor_
 
