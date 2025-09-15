@@ -20,7 +20,7 @@ tagline: 'Clear, structured documentation for complex platforms',
   },
 
   // Set the production url of your site here
-  url: 'https://hamzah-ahmad22.github.io',
+  url: 'https://hamzah-ahmad.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/portfolio/',
