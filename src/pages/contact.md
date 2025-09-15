@@ -9,7 +9,7 @@ slug: /contact
 Thanks for stopping by. Use the options below to reach me about projects, portfolio feedback, or collaboration.
 
 - [Email](mailto:hamzah_ahmad@live.com)
-- [LinkedIn](https://https://www.linkedin.com/in/hamzaha38b9b498)
+- [LinkedIn](https://www.linkedin.com/in/hamzaha38b9b498)
 - [GitHub](https://github.com/hamzah-ahmad22)
 
 <form name="contact" method="POST" action="https://formspree.io/f/xpwjeqrv">
