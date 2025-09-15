@@ -11,7 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Hamzah Ahmad | Content Lead',
-tagline: 'Clear, structured documentation for complex platforms',
+  tagline: 'Clear, structured documentation for complex platforms',
   favicon: 'img/Favicon.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -80,10 +80,16 @@ tagline: 'Clear, structured documentation for complex platforms',
     ({
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
+
+      // Dark mode defaults
+      colorMode: {
+        defaultMode: 'dark',
+        respectPrefersColorScheme: false,
+        disableSwitch: false,
+      },
+
       navbar: {
         title: 'My Portfolio',
-
-
       },
       footer: {
         style: 'dark',
