@@ -20,7 +20,7 @@ tagline: 'Clear, structured documentation for complex platforms',
   },
 
   // Set the production url of your site here
-  url: 'https://hamzah-ahmad22.github.io',
+  url: 'https://github.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/portfolio/',
@@ -29,7 +29,7 @@ tagline: 'Clear, structured documentation for complex platforms',
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'hamzah-ahmad22', // Usually your GitHub org/user name.
   projectName: 'portfolio', // Usually your repo name.
-
+  deploymentBranch: "gh-pages",
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
 
