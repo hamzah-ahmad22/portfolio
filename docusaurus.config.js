@@ -133,4 +133,15 @@ const config = {
     }),
 };
 
-export default config;
+// docusaurus.config.js
+export default {
+  // ...other config
+  themeConfig: {
+    colorMode: {
+      defaultMode: 'dark',          // start in dark
+      respectPrefersColorScheme: false, // ignore OS preference on first load
+      disableSwitch: false,         // set true if you want to force dark with no toggle
+    },
+    // prism: { theme: lightCodeTheme, darkTheme: darkCodeTheme } // leave as-is
+  },
+};
