@@ -113,7 +113,7 @@ tagline: 'Clear, structured documentation for complex platforms',
 
               {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/hamzah-ahmad22',
               },
             ],
           },
